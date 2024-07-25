@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet App</title>
+    <link rel="stylesheet" href="wallet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="../../image/logo.png" alt="logo">
+        </a>
+        <nav class="headbar">
+            <a href="../../index.html">Home</a>
+            <a href="../Login/login.html">Login</a>
+            <a href="../Doctors/doc.html">Doctors</a>
+            <a href="../Medicine/med.html">Medicine</a>
+            <a href="wallet.html">Wallet</a>
+            <a href="../ChatBot/index.html">ChatBOT</a>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="heading">Wallet</h1>
+        <hr>
+    </div>
+
+    <main class="wallet">
+        <div class="container">
+            <section class="balance-boxes">
+                <div class="box available">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h2>Available Balance</h2>
+                    <span>$1,234.56</span>
+                </div>
+                <div class="box spent">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h2>Amount Spent</h2>
+                    <span>$456.78</span>
+                </div>
+                <div class="box bank">
+                    <i class="fas fa-university"></i>
+                    <h2>Amount Added by Bank</h2>
+                    <span>$300.00</span>
+                </div>
+                <div class="box ads">
+                    <i class="fas fa-ad"></i>
+                    <h2>Amount Added by Ads</h2>
+                    <span>$150.00</span>
+                </div>
+            </section>
+
+            <section class="transaction-list">
+                <h2>Recent Transactions</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Deposit</span>
+                        <span>$100.00</span>
+                        <span class="date">25th July 2024</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Withdrawal</span>
+                        <span>$50.00</span>
+                        <span class="date">24th July 2024</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Transfer</span>
+                        <span>$200.00</span>
+                        <span class="date">23rd July 2024</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script src="wallet.js"></script>
+</body>
+</html>
