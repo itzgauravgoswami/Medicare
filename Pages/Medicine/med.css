@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+:root {
+    --black: black;
+    --purple: purple;
+    --dark-moderate-voilet: #663399;
+    --light-color: #666;
+    --box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    --border: 2rem solid rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Andika', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #333333;
+    color: #ffffff;
+    position: fixed; /* Keep the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.headbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1; /* Allow the nav to take remaining space */
+    justify-content: center; /* Center nav links */
+}
+
+.headbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+    display: block; /* Ensure links take up the full width */
+}
+
+.headbar a:hover {
+    color: #00aaff;
+}
+
+.menubtn {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .headbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333333;
+        width: 100%;
+        border-top: 1px solid #444444;
+        box-sizing: border-box;
+    }
+
+    .headbar.show {
+        display: flex;
+    }
+
+    .headbar a {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #444444;
+        width: 100%; /* Ensure full width for mobile links */
+    }
+
+    .menubtn {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+/* Container Heading */
+.container .heading {
+    color: #dcdcdc; /* Light color */
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Adjust for Fixed Header */
+.top {
+    padding-top: 100px; /* Adjust this value to reduce space below the navbar */
+}
+
+.container hr {
+    display: block;
+    margin: 0.5em auto; /* Center the line and apply margin top/bottom */
+    border-style: inset;
+    border-width: 3px;
+    border-color: #333; /* Dark border */
+}
+
+/* Top Section */
+.top .box-container {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.top .box-container .box {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: #1e1e1e; /* Dark background */
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.top .box-container .box img {
+    margin: 1rem 0;
+    height: 15rem;
+    width: 100%;
+}
+
+.top .box-container .box h1 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--dark-moderate-voilet);
+}
+
+.top .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.btn {
+    border: 1px solid #dbf8f1;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: #fff; /* White text color */
+    background: #1e1e1e; /* White background color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(120deg, #FAB2FF 40%, #663399);
+    color: #fff; /* Keep text color white on hover */
+}
+
+/* Bottom Section */
+.bottom .container .heading {
+    padding-top: 0;
+    color: #dcdcdc; /* Light color */
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.bottom .box-container {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.bottom .box-container .box {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: #1e1e1e; /* Dark background */
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    display: inline-block;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    width: 270px;
+    margin: -35px 0 0 -70px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    transform: skew(0deg, 13deg);
+    font-size: 0;
+    margin: 20px 0 0;
+    background: #2e2e2e; /* Darker background */
+    height: 190px;
+    width: 200px;
+}
+
+.bottom .box-container .box h1 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--dark-moderate-voilet);
+}
+
+.bottom .box-container .box p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+@media (max-width: 300px) {
+    .container .heading {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+
+    .top .box-container, .bottom .box-container {
+        padding: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .top .box-container .box img, .bottom .box-container .box img {
+        height: auto;
+        width: 100%;
+    }
+
+    .top .box-container .box h1, .top .box-container .box p, 
+    .bottom .box-container .box h1, .bottom .box-container .box p {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: .5rem 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
