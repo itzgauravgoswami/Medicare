@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     --primary-color: #007bff;
     --secondary-color: #28a745;
@@ -9,6 +10,7 @@
     --transition-speed: 0.3s;
 }
 
+/* Global Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +23,7 @@ body {
     color: var(--text-color);
 }
 
+/* Header */
 .header {
     display: flex;
     align-items: center;
@@ -83,6 +86,7 @@ body {
     transition: transform var(--transition-speed) ease, opacity var(--transition-speed) ease;
 }
 
+/* Mobile Responsive */
 @media (max-width: 768px) {
     .headbar {
         display: none;
@@ -128,15 +132,33 @@ body {
     }
 }
 
+/* Main Content */
 main.wallet {
     margin-top: 2rem;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: auto;
 }
 
+.container .heading {
+    color: #9b9bff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 110px;
+}
+
+.container hr {
+    display: block;
+    margin: 0.5em auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #333;
+}
+
+/* Balance Boxes */
 .balance-boxes {
     display: flex;
     justify-content: space-between;
@@ -180,6 +202,7 @@ main.wallet {
     color: var(--text-color);
 }
 
+/* Transaction List */
 .transaction-list {
     margin-top: 2rem;
     background-color: #1e1e1e;
@@ -217,26 +240,12 @@ main.wallet {
     margin-right: 1rem;
 }
 
-.container .heading {
-    color: #9b9bff;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-top: 110px;
-}
-
-.container hr {
-    display: block;
-    margin: 0.5em auto;
-    border-style: inset;
-    border-width: 3px;
-    border-color: #333;
-}
-
 .transaction-list ul li .date {
     font-size: 0.8rem;
     color: #6c757d;
 }
 
+/* Animations */
 @keyframes slideIn {
     from {
         transform: translateY(-20px);
