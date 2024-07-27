@@ -67,6 +67,8 @@ function getBotResponse(input) {
         return 'Influenza, or the flu, causes symptoms such as fever, cough, sore throat, muscle aches, and fatigue. Treatment includes antiviral medications like oseltamivir, over-the-counter medications for symptom relief, and plenty of rest and hydration.';
     } else if (input.includes('cold')) {
         return 'The common cold presents with symptoms like a runny or stuffy nose, sore throat, cough, and mild fever. Treatment focuses on symptom relief with over-the-counter medications such as decongestants and cough suppressants, along with rest and hydration.';
+    } else if (input.includes('fever')) {
+        return 'The fever presents with symptoms like a runny or stuffy nose, sore throat, cough, and mild fever. Treatment focuses on symptom relief with over-the-counter medications such as decongestants and cough suppressants, along with rest and hydration.';
     } else if (input.includes('eczema')) {
         return 'Eczema is characterized by itchy, inflamed skin, red rashes, and dry patches. Treatments include topical corticosteroids to reduce inflammation, moisturizers and emollients to hydrate the skin, and avoiding triggers such as certain soaps or fabrics.';
     } else if (input.includes('psoriasis')) {

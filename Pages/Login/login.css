@@ -26,11 +26,10 @@ html {
 }
 
 body {
-  background: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text color for contrast */
+  background: #121212;
+  color: #e0e0e0;
 }
 
-/* Header */
 
 .header {
   display: flex;
@@ -39,12 +38,12 @@ body {
   padding: 15px 30px;
   background: #333333;
   color: #ffffff;
-  position: fixed; /* Keep the header fixed at the top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure the header is above other content */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
 }
 
@@ -57,8 +56,8 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  flex-grow: 1; /* Allow the nav to take remaining space */
-  justify-content: center; /* Center nav links */
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .headbar a {
@@ -68,7 +67,7 @@ body {
   font-weight: bold;
   padding: 10px;
   transition: color 0.3s ease;
-  display: block; /* Ensure links take up the full width */
+  display: block;
 }
 
 .headbar a:hover {
@@ -94,7 +93,6 @@ body {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .headbar {
       display: none;
@@ -116,7 +114,7 @@ body {
       padding: 15px;
       text-align: center;
       border-bottom: 1px solid #444444;
-      width: 100%; /* Ensure full width for mobile links */
+      width: 100%;
   }
 
   .menubtn {
@@ -154,7 +152,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #1e1e1e; /* Dark background for mobile menu */
+    background: #1e1e1e;
     position: absolute;
     top: 100px;
     left: 0;
@@ -191,11 +189,11 @@ input {
 .container {
   position: relative;
   width: 100%;
-  background-color: #121212; /* Dark background for the container */
-  color: #e0e0e0; /* Light text color */
+  background-color: #121212;
+  color: #e0e0e0;
   min-height: 100vh;
   overflow: hidden;
-  padding-top: 100px; /* Added space for the fixed header */
+  padding-top: 100px;
   margin-top: 87px;
 }
 
@@ -242,14 +240,14 @@ form.sign-in-form {
 
 .title {
   font-size: 2.2rem;
-  color: #e0e0e0; /* Light text color */
+  color: #e0e0e0;
   margin-bottom: 10px;
 }
 
 .input-field {
   max-width: 380px;
   width: 100%;
-  background-color: #333; /* Dark input field background */
+  background-color: #333;
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
@@ -262,7 +260,7 @@ form.sign-in-form {
 .input-field i {
   text-align: center;
   line-height: 55px;
-  color: #666; /* Light gray color for icons */
+  color: #666;
   transition: 0.5s;
   font-size: 1.1rem;
 }
@@ -274,18 +272,18 @@ form.sign-in-form {
   line-height: 1;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #e0e0e0; /* Light text color */
+  color: #e0e0e0;
 }
 
 .input-field input::placeholder {
-  color: #aaa; /* Placeholder color */
+  color: #aaa;
   font-weight: 500;
 }
 
 .social-text {
   padding: 0.7rem 0;
   font-size: 1rem;
-  color: #e0e0e0; /* Light text color */
+  color: #e0e0e0;
 }
 
 .social-media {
@@ -300,9 +298,9 @@ form.sign-in-form {
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: #e0e0e0; /* Light color */
+  color: #e0e0e0;
   border-radius: 50%;
-  border: 1px solid #e0e0e0; /* Light border */
+  border: 1px solid #e0e0e0;
   text-decoration: none;
   font-size: 1.1rem;
   transition: 0.3s;
@@ -413,7 +411,6 @@ form.sign-in-form {
   transform: translateX(800px);
 }
 
-/* ANIMATION */
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
@@ -455,8 +452,9 @@ form.sign-in-form {
   .container {
     min-height: 800px;
     height: 100vh;
-    padding-top: 0; /* Remove padding for smaller screens */
+    padding-top: 0;
   }
+  
   .signin-signup {
     width: 100%;
     top: 95%;

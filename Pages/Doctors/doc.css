@@ -29,11 +29,10 @@ html {
 }
 
 body {
-    background: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
+    background: #121212;
+    color: #e0e0e0;
 }
 
-/* Header */
 
 .header {
     display: flex;
@@ -42,12 +41,12 @@ body {
     padding: 15px 30px;
     background: #333333;
     color: #ffffff;
-    position: fixed; /* Keep the header fixed at the top */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the header is above other content */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
 
@@ -60,8 +59,8 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-grow: 1; /* Allow the nav to take remaining space */
-    justify-content: center; /* Center nav links */
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .header .headbar a {
@@ -71,7 +70,7 @@ body {
     font-weight: bold;
     padding: 10px;
     transition: color 0.3s ease;
-    display: block; /* Ensure links take up the full width */
+    display: block;
 }
 
 .header .headbar a:hover {
@@ -97,7 +96,6 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Responsive Styles */
 
 @media (max-width: 768px) {
     .header .headbar {
@@ -120,7 +118,7 @@ body {
         padding: 15px;
         text-align: center;
         border-bottom: 1px solid #444444;
-        width: 100%; /* Ensure full width for mobile links */
+        width: 100%;
     }
 
     .header .menubtn {
@@ -144,29 +142,26 @@ body {
     }
 }
 
-/* Container Heading */
 
 .container .heading {
-    color: #dcdcdc; /* Light color */
+    color: #dcdcdc;
     text-align: center;
     font-size: 2.5rem;
 }
 
-/* Adjust for Fixed Header */
 
 .top {
-    padding-top: 100px; /* Adjust this value to reduce space below the navbar */
+    padding-top: 100px;
 }
 
 .container hr {
     display: block;
-    margin: 0.5em auto; /* Center the line and apply margin top/bottom */
+    margin: 0.5em auto;
     border-style: inset;
     border-width: 3px;
-    border-color: #333; /* Dark border */
+    border-color: #333;
 }
 
-/* Top Section */
 
 .top .box-container {
     padding: 6rem;
@@ -179,7 +174,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 3rem 2rem;
-    background: #1e1e1e; /* Dark background */
+    background: #1e1e1e;
     text-align: center;
     box-shadow: var(--box-shadow);
 }
@@ -210,22 +205,21 @@ body {
     padding: .8rem 3rem;
     font-size: 1.7rem;
     border-radius: .5rem;
-    color: #fff; /* White text color */
-    background: #1e1e1e; /* Dark background */
+    color: #fff;
+    background: #1e1e1e;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
     background: linear-gradient(120deg, #FAB2FF 40%, #663399);
-    color: #fff; /* Keep text color white on hover */
+    color: #fff;
 }
 
-/* Bottom Section */
 
 .bottom .container .heading {
     padding-top: 0;
-    color: #dcdcdc; /* Light color */
+    color: #dcdcdc;
     text-align: center;
     font-size: 2.5rem;
 }
@@ -241,7 +235,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 3rem 2rem;
-    background: #1e1e1e; /* Dark background */
+    background: #1e1e1e;
     text-align: center;
     box-shadow: var(--box-shadow);
 }
@@ -269,7 +263,7 @@ body {
     transform: skew(0deg, 13deg);
     font-size: 0;
     margin: 20px 0 0;
-    background: #2e2e2e; /* Darker background */
+    background: #2e2e2e;
     height: 190px;
     width: 200px;
 }
@@ -287,7 +281,6 @@ body {
     padding: 1rem 0;
 }
 
-/* Responsive Design */
 
 @media (max-width: 300px) {
     .container .heading {
