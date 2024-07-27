@@ -52,21 +52,49 @@ body {
 .menubtn {
     display: none;
 }
+/* cart.css */
 
+/* Basic styles for the hamburger menu */
 .hamburger {
     display: none;
-    flex-direction: column;
-    gap: 5px;
     cursor: pointer;
 }
 
 .hamburger span {
+    display: block;
     width: 25px;
     height: 3px;
     background: #ffffff;
-    border-radius: 5px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin: 5px 0;
+    transition: 0.3s;
 }
+
+/* Styles for the navigation menu */
+.headbar {
+    display: flex;
+    gap: 20px;
+}
+
+.headbar.active {
+    display: block;
+}
+
+/* Media query to show hamburger menu on small screens */
+@media (max-width: 768px) {
+    .headbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .headbar.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
 
 @media (max-width: 768px) {
     .headbar {
@@ -96,21 +124,6 @@ body {
         display: block;
     }
 
-    .hamburger {
-        display: flex;
-    }
-
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
 }
 
 .cart-section {

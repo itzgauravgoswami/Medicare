@@ -1,3 +1,13 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.headbar');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const cartItemsContainer = document.getElementById('cart-items');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -22,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>${item.quantity}</span>
                         <button class="quantity-btn increase" data-index="${index}">+</button>
                     </div>
-                    <p class="price">$${(item.price * item.quantity).toFixed(2)}</p>
+                    <p class="price">₹${(item.price * item.quantity).toFixed(2)}</p>
                 </div>
                 <div class="remove-btn" data-index="${index}">
                     <i class="fas fa-trash-alt"></i>

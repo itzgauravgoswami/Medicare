@@ -1,3 +1,14 @@
+// cart.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.headbar');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.btn');
 
